@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <script src="../plugin/distpicker.min.js"></script>
+    <title>收货地址</title>
+</head>
+
+<body>
+    <div class="banner">
+
+    </div>
+    <div class="address">
+        <div class="cell">
+            <div class="cell_hd"><label for="" class="cell_label">收货人：</label></div>
+            <div class="cell_bd"><input type="text" class="cell_input name"></div>
+        </div>
+        <div class="cell">
+            <div class="cell_hd"><label for="" class="cell_label">联系电话：</label></div>
+            <div class="cell_bd"><input type="text" class="cell_input phone"></div>
+        </div>
+        <div class="cell">
+            <div class="cell_hd"><label for="" class="cell_label">收货地区：</label></div>
+            <div class="cell_bd">
+                <div class="select_city" data-toggle="distpicker">
+                    <!-- container -->
+                    <select id="eprovinceName" name="provinceName"></select><!-- province -->
+                    <select id="ecityName" name="cityName"></select><!-- city -->
+                    <select id="edistrictName" name="districtName"></select><!-- district -->
+                </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="cell_hd"><label for="" class="cell_label">收货地址：</label></div>
+            <div class="cell_bd"><input type="text" class="cell_input address_main"></div>
+        </div>
+    </div>
+    <div class="submit">提交</div>
+    <div id="dialog">
+        <div class="mask"></div>
+        <div class="dialog_content">
+            <div class="dialog_msg"></div>
+            <div class="dialog_ft">
+                确定
+            </div>
+        </div>
+    </div>
+    <div class="model_success">
+        <div class="mask"></div>
+        <div class="model_content">
+            <h4>确认信息</h4>
+            <div class="cell">
+                <div class="cell_hd"><label for="" class="cell_label">收货人：</label></div>
+                <div class="cell_bd"><input type="text" class="cell_input model_name"></div>
+            </div>
+            <div class="cell">
+                <div class="cell_hd"><label for="" class="cell_label">联系电话：</label></div>
+                <div class="cell_bd"><input type="text" class="cell_input model_phone"></div>
+            </div>
+            <div class="cell">
+                <div class="cell_hd"><label for="" class="cell_label">收货地址：</label></div>
+                <div class="cell_bd"><input type="text" class="cell_input model_address"></div>
+            </div>
+            <!-- <p>*温馨提示：确认信息后不能修改，辛苦您请仔细核对信息</p> -->
+            <div class="model_bottom">
+                <div class="model_close">取消</div>
+                <div class="model_affirm">确认</div>
+            </div>
+        </div>
+    </div>
+    <div class="model_addPrice">
+        <div class="mask"></div>
+        <div class="addPrice_content">
+            <img src="../../img/addressPrice_code.jpg" alt="">
+            <p>您选择的地区是偏远地区，需另补邮费差价！</p>
+            <p>长按识别上方二维码补差价！</p>
+        </div>
+        <img src="../../img/close_icon.png" alt="" class="model_addPrice_close">
+    </div>
+</body>
+
+</html>
