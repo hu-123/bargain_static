@@ -6,11 +6,7 @@
 1. 构建目录结构如下图。
 ![images](https://github.com/sky-hu-10/bargain_static/blob/master/images/catalogue.png)
 2. webpack4.x新特性。
-<<<<<<< HEAD
    >不再是webpack单独使用,4.x需要配合webpack一起使用
-=======
-   >不再是webpack单独使用,4.x需要配合webpack一起使用
->>>>>>> d60d1709c11fb9fcd3bd2bdc1f7df9fcb8ebf19f
 
    >webpack4.x提供一个mode的配置选择区分默认配置。mode分为development/production/none。webpack运行时会根据mode设置一个全局变量process.env.NODE_ENV
 3. 配置文件核心
